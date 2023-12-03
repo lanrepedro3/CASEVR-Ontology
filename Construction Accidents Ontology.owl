@@ -1,0 +1,1356 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lanre/ontologies/sso#"
+     xml:base="http://www.semanticweb.org/lanre/ontologies/sso"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ns="http://creativecommons.org/ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:sso="http://www.semanticweb.org/lanre/ontologies/sso#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lanre/ontologies/sso">
+        <ns:license>https://creativecommons.org/licenses/by/3.0/</ns:license>
+        <dc:creator>Akeem Pedro (lanrepedro3@cau.ac.kr)</dc:creator>
+        <dc:description>OWL ontology for modelling information and knowledge in accident case description</dc:description>
+        <dc:language xml:lang="en"></dc:language>
+        <dc:title>Safety Sharing Ontology (Accidents)</dc:title>
+        <dc:uri xml:lang="en">https://github.com/lanrepedro3/CASEVR-Ontology</dc:uri>
+        <rdfs:comment>Ontology builds upon the construction safety ontology developed by Akeem Pedro, based on Occupational Safety and Health Administration (OSHA) classifications for accident case data</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://creativecommons.org/ns#license -->
+
+    <owl:AnnotationProperty rdf:about="http://creativecommons.org/ns#license"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/date -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/date"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/description -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/title"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/uri -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/uri"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#can_arrest -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#can_arrest"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#can_prevent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#can_prevent">
+        <owl:equivalentProperty rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#eliminates_event"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#is_mitigated_by_element"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#eliminates_event -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#eliminates_event"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#has_accident_cause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#has_accident_cause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#has_accident_type -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#has_accident_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#involves_the_use_of -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#involves_the_use_of"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#is_mitigated_by_element -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#is_mitigated_by_element"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#occured_during -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#occured_during"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#occured_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#occured_in"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#resulted_in -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#resulted_in"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Source -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Source">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Title -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Title">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Accident_case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Accident_case"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Accident_cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Accident_cause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Accident_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Degree_of_injury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Degree_of_injury"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Equipment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Work_type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Workspace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Workspace"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#firefighting_equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#firefighting_equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#human_factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#human_factor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Workspace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Workspace"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Equipment"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#CO2_fire_extinguisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#CO2_fire_extinguisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#firefighting_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#HVAC_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#HVAC_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#Temporary_utilities_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#Temporary_utilities_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#aerial_lift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#aerial_lift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#backhoe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#backhoe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#barrel_air_compressor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#barrel_air_compressor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#blower -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#blower">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#boom_lift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#boom_lift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#bulldozer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#bulldozer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#cable_lopper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#cable_lopper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#cardiovascular_or_respiratory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#cardiovascular_or_respiratory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#carpentry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#carpentry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#cart -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#cart">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#catch_point_or_puncture_action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#catch_point_or_puncture_action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#caterpillar_scraper -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#caterpillar_scraper">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#caught_in_or_between -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#caught_in_or_between">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#ceiling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#ceiling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#chemical_action_reaction_or_exposure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#chemical_action_reaction_or_exposure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#concrete_pump_hose -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#concrete_pump_hose">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#crane -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#crane">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#decking_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#decking_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#defective_equipment_in_use -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#defective_equipment_in_use">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#demolition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#demolition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#distracting_action_by_others -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#distracting_action_by_others">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#drill -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#drill">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#drill_press -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#drill_press">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#driveway -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#driveway">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#ductwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#ductwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#earthwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#earthwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#electrical_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#electrical_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#elevator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#elevator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#equipment_inappropriate_for_operation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#equipment_inappropriate_for_operation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#equipment_staging_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#equipment_staging_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#excavation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#excavation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#excavator -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#excavator">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#exterior_finishing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#exterior_finishing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#fall -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#fall">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#fall_protection_harness -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#fall_protection_harness">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+        <can_arrest rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#fall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#fall_restraint_system -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#fall_restraint_system">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+        <can_prevent rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#fall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#fatal_injury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#fatal_injury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Degree_of_injury"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#fire_alarm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#fire_alarm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#firefighting_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#flooring_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#flooring_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#flying_object_action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#flying_object_action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#fork_lift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#fork_lift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#formwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#formwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#foundation_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#foundation_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#gas_cylinder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#gas_cylinder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#gas_vapor_mist_fume_smoke_or_dust -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#gas_vapor_mist_fume_smoke_or_dust">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#grading -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#grading">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#guardrails -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#guardrails">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+        <can_prevent rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#fall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#hard_hat -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#hard_hat">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#inappropriate_position_for_task -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#inappropriate_position_for_task">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#inhalation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#inhalation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#inspection_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#inspection_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_engineering_controls -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_engineering_controls">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_house_keeping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_house_keeping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_protective_work_clothing_and_equipment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_protective_work_clothing_and_equipment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_respiratory_protection -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_respiratory_protection">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_work_practice_program -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#insufficient_or_lacking_work_practice_program">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#insulation_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#insulation_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#interior_finishing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#interior_finishing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#jackhammer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#jackhammer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#ladder -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#ladder">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#loader -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#loader">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#lockout_procedure_malfunction -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#lockout_procedure_malfunction">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#lower_floor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#lower_floor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#malfunction_in_securing_or_warning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#malfunction_in_securing_or_warning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#masonry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#masonry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#material_handling_procedure_inappropriate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#material_handling_procedure_inappropriate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#material_or_equipment_handling_method -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#material_or_equipment_handling_method">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#mezzanine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#mezzanine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#misjudgment_of_hazardous_situation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#misjudgment_of_hazardous_situation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#mixer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#mixer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#motor_vehicle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#motor_vehicle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#nail_gun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#nail_gun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#non_fatal_injury -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#non_fatal_injury">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Degree_of_injury"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#outdoor_foundation_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_foundation_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#overhead_moving_or_falling_object_action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#overhead_moving_or_falling_object_action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#overpressure_or_underpressure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#overpressure_or_underpressure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#painting_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#painting_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#parking_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#parking_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#patio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#patio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#paving_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#paving_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#piling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#piling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#pipe_wrench -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#pipe_wrench">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#plasma_cutter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#plasma_cutter"/>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#plumbing_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#plumbing_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#powder_fire_extinguisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#powder_fire_extinguisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#firefighting_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#rebar_installation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#rebar_installation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#road -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#road">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#road_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#road_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#roller_compactor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#roller_compactor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#roof -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#roof">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#roofing_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#roofing_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#safety_devices_removed_or_inoperable -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#safety_devices_removed_or_inoperable">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#human_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#safety_gloves -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#safety_gloves">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#safety_goggles -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#safety_goggles">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#safety_net -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#safety_net">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#safety_equipment"/>
+        <can_arrest rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#fall"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#saw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#saw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#scaffold -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#scaffold">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#scaffolding_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#scaffolding_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#scissor_lift -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#scissor_lift">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#elevated_work_platforms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#sewage_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#sewage_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#sheathing_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#sheathing_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#sheer_point_action -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#sheer_point_action">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#shingle_cutter -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#shingle_cutter">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#tools_and_machinery"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#shock -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#shock">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#shoring_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#shoring_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#site_clearing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#site_clearing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#site_entrance_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#site_entrance_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#site_exit_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#site_exit_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#sound_level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#sound_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#spray_foam_fire_extinguisher -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#spray_foam_fire_extinguisher">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#firefighting_equipment"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#staircase -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#staircase">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#steelwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#steelwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#storage_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#storage_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#struck_against -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#struck_against">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#struck_by -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#struck_by">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Accident_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#temperature_tolerance_level -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#temperature_tolerance_level">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#trailer -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#trailer">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#trench_area -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#trench_area">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#outdoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#truck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#truck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#heavy_equipment_and_vehicles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#upper_floor -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#upper_floor">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#indoor_workspace"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#waterproofing_work -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#waterproofing_work">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#weather_or_earthquake_etc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#weather_or_earthquake_etc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#woodwork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#woodwork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#Work_type"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lanre/ontologies/sso#work_surface_or_facility_layout_condition -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lanre/ontologies/sso#work_surface_or_facility_layout_condition">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lanre/ontologies/sso#environmental_factor"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
